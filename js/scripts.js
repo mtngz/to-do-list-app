@@ -32,4 +32,7 @@ function newItem() {
   deleteButton.on("click", function deleteListItem() {
     li.addClass("delete");
   });
+
+  // reorder items
+  $("list").sortable(); // same as in javascript
 }
