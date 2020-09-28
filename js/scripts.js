@@ -19,13 +19,13 @@ function newItem() {
   }
 
   // add event double-click to crosds out item
-  li.on("dbclick", function crossOut() {
+  li.on("dblclick", function crossOut() {
     li.toggleClass("strike");
   });
 
   // add delete button
   let deleteButton = $("<deleteButton></deleteButton>");
-  deleteButton.append("x");
+  deleteButton.append(document.createTextNode("x"));
   li.append(deleteButton);
 
   // add event click to delete List Item
@@ -34,5 +34,5 @@ function newItem() {
   });
 
   // reorder items
-  $("list").sortable(); // same as in javascript
+  $("#list").sortable(); // same as in javascript
 }
