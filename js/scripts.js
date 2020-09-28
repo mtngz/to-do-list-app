@@ -12,4 +12,14 @@ function newItem() {
   } else {
     $("#list").append(li);
   }
+
+  // Cross out item with toggle
+  function crossOut() {
+    li.toggleClass("strike");
+  }
+
+  // add event double-click to crosds out item
+  li.on("dbclick", function crossOut() {
+    li.toggleClass("strike");
+  });
 }
