@@ -22,4 +22,14 @@ function newItem() {
   li.on("dbclick", function crossOut() {
     li.toggleClass("strike");
   });
+
+  // add delete button
+  let deleteButton = $("<deleteButton></deleteButton>");
+  deleteButton.append("x");
+  li.append(deleteButton);
+
+  // add event click to delete List Item
+  deleteButton.on("click", function deleteListItem() {
+    li.addClass("delete");
+  });
 }
