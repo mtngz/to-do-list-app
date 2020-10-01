@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400);
+body {
+  font: normal normal 13px/16px "Open Sans", sans-serif;
+  background: #dfdfdf;
+}
+.container {
+  padding: 20px;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 40px;
+  background: #fff;
+  border-radius: 5px;
+}
+form {
+  display: inline-block;
+}
+input {
+  padding: 4px 15px 4px 5px;
+}
+h2 {
+  text-align: center;
+}
+#button {
+  display: inline-block;
+  background-color: #2b8132;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 2px;
+  padding: 5px 15px;
+}
+#button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+ol {
+  padding-left: 20px;
+}
+ol li {
+  height: 25px;
+  padding: 5px;
+  color: #000;
+  margin: 0 auto 5px;
+  -webkit-box-shadow: 3px 3px #00000040;
+  box-shadow: 3px 3px #00000040;
+  background: #bce9f8;
+}
+.strike {
+  text-decoration: line-through;
+}
+li:hover {
+  cursor: pointer;
+}
+.delete {
+  display: none;
+}
+li > deleteButton {
+  height: 20px;
+  width: 20px;
+  background: 0 0;
+  border: 2px solid red;
+  border-radius: 50px;
+  float: right;
+  color: red;
+  font-weight: 800;
+  text-align: center;
+}
